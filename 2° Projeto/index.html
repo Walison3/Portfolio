@@ -15,9 +15,9 @@
             <img src="images/logo.png" alt="Capelo">
             <h1>Calculadora de médias</h1>
         </header>
-        <form>
-            <input type="text" name="Atividade" id="txt" placeholder="Nota da atividade">
-            <input type="number" name="numero" id="num" placeholder="Nota" min="0" max="10">
+        <form id="form-list">
+            <input type="text" name="Atividade" placeholder="Nome da atividade" required id="nome-atividade">
+            <input type="number" name="numero" placeholder="Nota" min="0" max="10" required id="nota-atividade">
             <button type="submit">Adicionar +</button>
         </form>
         <table cellspacing="0">
@@ -29,20 +29,25 @@
                 </tr>
             </thead>
             <tbody>
+                <!--
+                
                 <tr>
                     <td>Atividade 1</td>
                     <td>7</td>
                     <td><img src="images/aprovado.png" alt="Emoji festejando"></td>
-                </tr>
+                </tr> 
+                
+                -->
             </tbody>
             <tfoot>
                 <tr>
                     <td>Média final</td>
                     <td>7</td>
-                    <td><span class="resultado">aprovado</span></td>
+                    <td><span class="resultado reprovado">aprovado</span></td>
                 </tr>
             </tfoot>
         </table>
     </div>
+    <script src="arquivo.js"></script>
 </body>
 </html>
